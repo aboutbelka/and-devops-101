@@ -21,8 +21,6 @@ workflows:
     jobs:
       - build
       - test
-          requires:
-            - build
           filters:
             branches:
               only: develop
