@@ -19,10 +19,10 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build-test
+      - build
+      - test
       requires:
             - build
-            - test
           filters:
             branches:
               only: develop
